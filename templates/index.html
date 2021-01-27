@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N-Back</title>
+</head>
+<body>
+    <div id="level" class="level ">
+        <h1 class="main-title">N-Back</h1>
+        <p class="level-text">何個前の数値を答えるか選んでください</p>
+        <div class="level-buttons">
+            <button id="one" class="level-button" name="level-button" value="1">1</button>
+            <button id="two" class="level-button" name="level-button" value="2">2</button>
+            <button id="three" class="level-button" name="level-button" value="3">3</button>
+            <button id="four" class="level-button" name="level-button" value="4">4</button>
+            <button id="five" class="level-button" name="level-button" value="5">5</button>
+            <button id="six" class="level-button" name="level-button" value="6">6</button>
+            <button id="seven" class="level-button" name="level-button" value="7">7</button>
+            <button id="eight" class="level-button" name="level-button" value="8">8</button>
+            <button id="nine" class="level-button" name="level-button" value="9">9</button>
+        </div>
+        
+    </div>
+
+    <div id="countDown" class="count-down hidden">
+        <p id="count">3</p>
+    </div>
+
+    <div id="nBack" class="flex">
+        <h1 id="remain" class="title damy"></h1>
+        <div id="calculate" class="calculate hidden">
+            <span id="number1" class="number"><span class="damy">0</span></span>
+            <span class="plus">+</span>
+            <span id="number2" class="number"><span class="damy">0</span></span>
+            <span class="equal">=</span>
+            <span id="number3" class="number answer"><span >?</span></span>
+            <p id="question" class="question"></p>
+            <p id="judge"></p>
+        </div>
+        <div id="button" class="button damy">
+            <button id="one" class="num-button" name="num-button" value="0">0</button>
+            <button id="one" class="num-button" name="num-button" value="1">1</button>
+            <button id="two" class="num-button" name="num-button" value="2">2</button>
+            <button id="three" class="num-button" name="num-button" value="3">3</button>
+            <button id="four" class="num-button" name="num-button" value="4">4</button>
+            <button id="five" class="num-button" name="num-button" value="5">5</button>
+            <button id="six" class="num-button" name="num-button" value="6">6</button>
+            <button id="seven" class="num-button" name="num-button" value="7">7</button>
+            <button id="eight" class="num-button" name="num-button" value="8">8</button>
+            <button id="" class="num-button damy"  value="">8</button>
+            <button id="nine" class="num-button" name="num-button" value="9">9</button>
+        </div>
+    </div>
+    
+    <script src="static/js/calculate.js"></script>
+</body>
+</html>
